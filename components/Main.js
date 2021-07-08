@@ -11,6 +11,7 @@ export default function Main(){
                     <li><a href="">About me</a></li>
                     <li><a href="">Skills</a></li>
                     <li><a href="">GitHub</a></li>
+                    <li><a href="">LinkedIn</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
@@ -25,10 +26,12 @@ export default function Main(){
                 align-content: center;
                 cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='40' viewport='0' style='fill:black;font-size:30px;'><text y='30' x='0'>🍩</text></svg>") 16 0,auto;
                 .typewriter {
-                    width: 320px;
+                    width: 330px;
+                    padding: 5px;
                     text-align: center;
                     margin-left: auto;
                     margin-right: auto;
+                    background-color: #e4e4e4;
                 }
                 .typewriter h2 {
                     color: #000;
@@ -36,7 +39,6 @@ export default function Main(){
                     border-right: .15em solid orange; /* The typwriter cursor */
                     white-space: nowrap; /* Keeps the content on a single line */
                     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-                    margin-top: 10px;
                     letter-spacing: .15em; /* Adjust as needed */
                     animation: 
                     typing 2s steps(30, end),
@@ -53,6 +55,7 @@ export default function Main(){
                 h1 {
                     font-size: 3em;
                     margin: 0;
+                    margin-bottom: 10px;
                     text-align: center;
                     font-weight: 900;
                 }
