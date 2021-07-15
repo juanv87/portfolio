@@ -7,25 +7,25 @@ export default function AboutMe() {
                 <p>Portfolio@JuanAndresVillegas <span>About Me</span> <b>/</b></p>
             </pre> 
             <pre className="bash">
-                <p>> Hola 👋</p>
+                <p>&gt; Hola 👋</p>
             </pre> 
             <pre className="bash">
-                <p>> Aquí, Juan.</p>
+                <p>&gt; Aquí, Juan.</p>
             </pre>
             <pre className="bash">
-                <p>> Soy de Buenos Aires, Argentina.</p>
+                <p>&gt; Soy de Buenos Aires, Argentina.</p>
             </pre>
             <pre className="bash">
-                <p>> Tengo 34 años.</p>
+                <p>&gt; Tengo 34 años.</p>
             </pre>
             <pre className="bash">
-                <p>> Actualmente me dedico a aportar mis conocimientos en diferentes proyectos de forma Freelance.</p>
+                <p>&gt; Actualmente me dedico a aportar mis conocimientos en diferentes proyectos de forma Freelance.</p>
             </pre>
             <pre className="bash">
-                <p>> Uno de mis mayores objetivos profesionales es desarrollarme como FrontEnd en ReactJS y React Native.</p>
+                <p>&gt; Uno de mis mayores objetivos profesionales es desarrollarme como FrontEnd en ReactJS y React Native.</p>
             </pre>
             <pre className="bash border">
-                <p>> Priorizando un ambiente laboral positivo, en donde pueda aprender y compartir mis conocimientos.</p>
+                <p>&gt; Priorizando un ambiente laboral positivo, en donde pueda aprender y compartir mis conocimientos.</p>
             </pre>
             </div>
         </section>
