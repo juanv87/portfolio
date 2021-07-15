@@ -102,6 +102,8 @@ export default function Main(){
                 nav {
                     text-align: center;
                     margin-top: 30px;
+                    max-width: 100%;
+                    overflow-x: hidden;
                     ul {
                         margin: 0;
                         padding: 0;

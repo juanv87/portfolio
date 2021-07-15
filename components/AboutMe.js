@@ -37,7 +37,7 @@ export default function AboutMe() {
                 align-items: center; 
                 .console {
                     width: 960px;
-                    max-width: 70%;
+                    max-width: 100%;
                     height: 500px;
                     overflow-y: scroll;
                     background-color: #000;
