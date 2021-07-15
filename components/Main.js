@@ -1,8 +1,13 @@
+import { useState } from 'react';
+
 export default function Main(){
+    const [darkTheme, setDarkTheme] = useState(true);
+
     return(
         <>
-        <main>
-            <h1>🙋🏻‍♂️Juan Andrés Villegas🙆🏻‍♂️</h1>
+        <main className={darkTheme ? 'dark-theme' : 'light-theme'}>
+            <a className="light-dark" onClick={() => setDarkTheme(prevTheme => !prevTheme)}>{darkTheme ? '🌞' : '🌒'}</a>
+            <h1>Juan Andrés Villegas</h1>
             <div className="typewriter">
                 <h2>FrontEnd Developer</h2>
             </div>
@@ -24,25 +29,53 @@ export default function Main(){
                 flex-direction: column;
                 justify-content: center;
                 align-content: center;
-                cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='40' viewport='0' style='fill:black;font-size:30px;'><text y='30' x='0'>🍩</text></svg>") 16 0,auto;
+                background-color: #1e1e1e;
+                cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='40' viewport='0' style='fill:black;font-size:30px;'><text y='30' x='0'>🤟🏼</text></svg>") 16 0,auto;
+                a {
+                    &:hover {
+                        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='40' viewport='0' style='fill:black;font-size:30px;'><text y='30' x='0'>👆🏼</text></svg>") 16 0,auto;
+                    }
+                    &.light-dark {
+                        position: fixed;
+                        top: 40px;
+                        right: 40px;
+                        font-size: 30px;
+                    }
+                }
+                &.dark-theme {
+                    background-color: #1e1e1e;
+                }
+                &.light-theme {
+                    background-color: #fff;
+                    h1 {
+                        color: #1e1e1e;
+                    }
+                    .typewriter h2 {
+                        color: #1e1e1e;
+                    }
+                }
+                a.light-dark {
+                    text-align: center;
+                    display: block;
+                    color: #d4d4d4;
+                }
                 .typewriter {
                     width: 330px;
                     padding: 5px;
                     text-align: center;
                     margin-left: auto;
                     margin-right: auto;
-                    background-color: #e4e4e4;
                 }
                 .typewriter h2 {
-                    color: #000;
+                    color: #d4d4d4;
                     overflow: hidden; /* Ensures the content is not revealed until the animation */
-                    border-right: .15em solid orange; /* The typwriter cursor */
+                    border-right: .15em solid #d4d4d4; /* The typwriter cursor */
                     white-space: nowrap; /* Keeps the content on a single line */
                     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
                     letter-spacing: .15em; /* Adjust as needed */
                     animation: 
                     typing 2s steps(30, end),
-                    blink-caret .5s step-end infinite;
+                    blink-caret .8s step-end infinite;
                 }
                 @keyframes typing {
                     from { width: 0 }
@@ -50,7 +83,7 @@ export default function Main(){
                 }
                 @keyframes blink-caret {
                     from, to { border-color: transparent }
-                    50% { border-color: orange }
+                    50% { border-color: #d4d4d4 }
                 }
                 h1 {
                     font-size: 3em;
@@ -58,6 +91,7 @@ export default function Main(){
                     margin-bottom: 10px;
                     text-align: center;
                     font-weight: 900;
+                    color: #d4d4d4;
                 }
                 h2 {
                     font-size: 1.5em;
@@ -77,11 +111,10 @@ export default function Main(){
                             list-style-type: none; 
                             margin: 0 15px;
                             a {
-                                color: #000;
+                                color: #5191c5;
                                 text-decoration: none;
                                 font-size: 1.5em;
                                 &:hover {
-                                    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='40' viewport='0' style='fill:black;font-size:30px;'><text y='30' x='0'>👆</text></svg>") 16 0,auto;
                                     text-decoration: underline;
                                 }
                             }
